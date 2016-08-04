@@ -7,8 +7,7 @@
 (function ($) {
     "use strict"; // Start of use strict
     
-    
-    $('#subscribe').on('click', function(event){
+    $('#form-cadastro').on('submit', function(event){
     	event.preventDefault();
 
     	$.ajax({
@@ -18,18 +17,14 @@
     		url: 'api/contacts',
     		type: 'POST',
     		data:  JSON.stringify({
-    			name: $('#contactName').val(),
-    			email: $('#contactEmail').val(),
-    			text: $('#contactMessage').val()
+    			name: $('#form-name').val(),
+    			phone: $('#form-phone').val(),
+                email: $("#form-email").val(),
+    			text: $('#form-observations').val()
     		})
     	});
-    	
     });
     
-    
-   
-    
-
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);
@@ -113,4 +108,25 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+    
+    
+    //map Latitude de Av. Paulista é -23,5575. Longitude de Av. Paulista é -46,6602
+    var radius = 10, tips = {};
+    var po = org.polymaps;
+
+    var map = po.map()
+        .container(document.getElementById("map").appendChild(po.svg("svg")))
+        .center({lat: -23.557, lon: -46.660})
+        .zoom(15)
+        .add(po.interact());
+
+    map.add(po.image()
+        .url(po.url("http://{S}tile.cloudmade.com"
+        + "/1a1b06b230af4efdbb989ea99e9841af" // http://cloudmade.com/register
+        + "/999/256/{Z}/{X}/{Y}.png")
+        .hosts(["a.", "b.", "c.", ""])));
+    
+    map.add(po.compass()
+        .pan("none"));
+
 })(jQuery); // End of use strict

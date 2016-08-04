@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/map.css" type="text/css" />
     <link rel="stylesheet" href="css/creative.css" type="text/css" />
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -301,8 +302,13 @@
     <footer>
         <div class="footer-main">
             <div class="container">
-                <div class="row ">
-                    <div class="col-lg-3 col-md-6">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <h4>Endereco</h4>
+                        <p class="text-faded">Avenida Paulista, 2200</p>
+                        <p class="text-faded">São Paulo/SP - Brasil</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
                         <h4>Social</h4>
                         <ul class="list-inline">
                             <li>
@@ -316,17 +322,29 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-6">
-                        <h4>Entre em contato</h4>
-                        <div class="subscribe-form">
-                            <form id="mc-form" class="group" novalidate="true">
-                                <input id="contactName" type="email" placeholder="nome" required>
-                                <input id="contactEmail" type="text" placeholder="e-mail" required>
-                                <textarea id="contactMessage" rows="3" cols="19" placeholder="detalhes sobre o projeto"></textarea>
-                                <button id="subscribe" name="subscribe">Enviar</button>
-                                <label for="mc-email" class="subscribe-message"></label>
-                            </form>
-                        </div>
+                    <div class="col-lg-6 col-md-4">
+                        <h4>Agende uma reunião conosco</h4>
+                        <form role="form" method="post" action="api/contact" id="form-cadastro">
+                            <div class="form-group">
+                                <label class="sr-only" for="form-name">Nome</label>
+                                <input type="text" name="form-name" required="" placeholder="Nome..." class="form-name form-control" id="form-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-phone">Telefone</label>
+                                <input type="text" name="form-phone" placeholder="Telefone..." class="form-phone form-control" id="form-phone">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-email">Email</label>
+                                <input type="email" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-email">Conte-nos um pouco sobre seu projeto</label>
+                                <textarea name="form-observations" required="" placeholder="Para te ajudar, precisamos saber um pouco sobre seu projeto." class="form-observations form-control" id="form-observations"></textarea>
+                            </div>
+                            <button role="form" type="submit" class="btn" id="form-enviar">Enviar</button>
+                        </form>
+                        
                     </div>
                     <div id="go-top" style="display: block;">
                         <a class="smoothscroll page-scroll" title="Início" href="#inicio"><i class="fa fa-arrow-up"></i></a>
@@ -334,6 +352,7 @@
                 </div>
             </div>
         </div>
+        <div id="map"></div>
     </footer>
 
     <!-- jQuery -->
@@ -345,6 +364,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/polymaps.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 </body>
