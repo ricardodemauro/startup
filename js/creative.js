@@ -6,6 +6,29 @@
 
 (function ($) {
     "use strict"; // Start of use strict
+    
+    
+    $('#subscribe').on('click', function(event){
+    	event.preventDefault();
+
+    	$.ajax({
+    		headers:{
+    			'accept': 'application/json'
+    		},
+    		url: 'api/contacts',
+    		type: 'POST',
+    		data:  JSON.stringify({
+    			name: $('#contactName').val(),
+    			email: $('#contactEmail').val(),
+    			text: $('#contactMessage').val()
+    		})
+    	});
+    	
+    });
+    
+    
+   
+    
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function (event) {
