@@ -24,7 +24,6 @@
 <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -34,39 +33,38 @@
                 </button>
                 <span class="navbar-brand page-scroll" href="#page-top">
                     <object data="img/arrow_white_blue.svg" type="image/svg+xml" height="35px">
-                        <!--<img src="yourfallback.jpg" />-->
                     </object>
                 </span>
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <span>Startup Launcher<span>
                 </a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="#inicio">Início</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#processo">Como funciona</a>
+                        <a class="page-scroll" href="#como-funciona">Como funciona</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#sobre">Sobre</a>
+                        <a class="page-scroll" href="#nossos-clientes">Nossos clientes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfólio</a>
+                        <a class="page-scroll" href="#servicos-oferecidos">Serviços oferecidos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#plataformas-moveis">Plataformas móveis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <header id="inicio">
+    <header id="inicio" class="parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Startup Launcher</h1>
@@ -77,7 +75,7 @@
         </div>
     </header>
 
-    <section id="processo">
+    <section id="como-funciona">
         <div class="container">
             <div class="row col-lg-12 text-center">
                 <h2 class="section-heading">Como funciona?</h2>
@@ -111,20 +109,50 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="sobre">
-        <div class="container">
+    <section class="bg-primary" id="nossos-clientes">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                   	<h2 class="section-heading">Como funciona!</h2>
+                   	<h2 class="section-heading">Nossos clientes!</h2>
                     <hr class="primary light">
-                    <p class="text-faded">Transformamos insights em projetos reais, com um processo muito simples e rapido, com apenas alguns passos viabilizamos projetos complexos. <br/>Entendemos e analisamos o projeto, criacao da Solucao e desenvolvimento de processos</p>
-<!--                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Vamos</a> -->
                 </div>
+            </div>
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6 col-md-offset-2"> 
+                     <a href="img/portfolio/fullsize/removame.jpg" class="portfolio-box"> 
+                         <img src="img/portfolio/thumbnails/removame.jpg" class="img-responsive" alt=""> 
+                         <div class="portfolio-box-caption"> 
+                             <div class="portfolio-box-caption-content"> 
+                                 <div class="project-category text-faded"> 
+                                     Portal - Remova.me
+                                 </div> 
+                                 <div class="project-name"> 
+                                     http://remova.me
+                                 </div> 
+                             </div> 
+                         </div> 
+                     </a> 
+                 </div> 
+                 <div class="col-lg-4 col-sm-6"> 
+                     <a href="img/portfolio/fullsize/descontobruto.jpg" class="portfolio-box"> 
+                         <img src="img/portfolio/thumbnails/descontobruto.jpg" class="img-responsive" alt=""> 
+                         <div class="portfolio-box-caption"> 
+                             <div class="portfolio-box-caption-content"> 
+                                 <div class="project-category text-faded"> 
+                                     Portal - Desconto Bruto
+                                 </div> 
+                                 <div class="project-name"> 
+                                     http://descontobruto.com.br 
+                                 </div> 
+                             </div> 
+                         </div> 
+                     </a> 
+                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicos">
+    <section id="servicos-oferecidos">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -138,133 +166,36 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Desenvolvimento de apps e sites</h3>
-                        <p class="text-muted">Transformamos seus Insights</p>
+                        <h3>Desenvolvimento</h3>
+                        <p class="text-muted">Transformamos seus <i>Insights</i> em aplicativos mobile, sites e serviços web</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Lançamento</h3>
-                        <p class="text-muted">Lançamos para o Mundo!!!</p>
+                        <h3>Lançamos para o mundo</h3>
+                        <p class="text-muted">Publicamos seu aplicativo na <i>Apple Store/Google Play</i>, hospedagems seu serviço e site</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
                         <h3>Infraestrutura</h3>
-                        <p class="text-muted">Extraimos toda a complexidade de construir grandes sistemas</p>
+                        <p class="text-muted">Extraimos toda a complexidade de hospedar grandes sistemas</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
                         <h3>Consultoria de TI</h3>
-                        <p class="text-muted">Acompahamos todo o andamento</p>
+                        <p class="text-muted">Desenvolvimento de sistemas utilizando metodologias ágeis</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-<!--     <section class="no-padding" id="portfolio"> -->
-<!--         <div class="container-fluid"> -->
-<!--             <div class="row no-gutter popup-gallery"> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--                 <div class="col-lg-4 col-sm-6"> -->
-<!--                     <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box"> -->
-<!--                         <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt=""> -->
-<!--                         <div class="portfolio-box-caption"> -->
-<!--                             <div class="portfolio-box-caption-content"> -->
-<!--                                 <div class="project-category text-faded"> -->
-<!--                                     Category -->
-<!--                                 </div> -->
-<!--                                 <div class="project-name"> -->
-<!--                                     Project Name -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </a> -->
-<!--                 </div> -->
-<!--             </div> -->
-<!--         </div> -->
-<!--     </section> -->
-
-    <section id="download" class="bg-primary">
+    <section id="plataformas-moveis" class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -299,7 +230,7 @@
     </section>
 
 
-    <footer>
+    <footer id="contato">
         <div class="footer-main">
             <div class="container">
                 <div class="row">
@@ -323,7 +254,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-4">
-                        <h4>Agende uma reunião conosco</h4>
+                        <h4>Solicite uma reunião conosco</h4>
                         <form role="form" method="post" action="api/contact" id="form-cadastro">
                             <div class="form-group">
                                 <label class="sr-only" for="form-name">Nome</label>
@@ -352,11 +283,14 @@
                 </div>
             </div>
         </div>
-        <div id="map"></div>
+        <div id="map">
+            <iframe height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJB4i3Vc1ZzpQRuAiiYC1wm6g&key=AIzaSyAQlGCm1sVFlM1LelO680QFesBfjoOf4Ok" allowfullscreen></iframe>
+        </div>
     </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/parallax.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -364,8 +298,6 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/polymaps.js"></script>
-    <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 </body>
 </html>

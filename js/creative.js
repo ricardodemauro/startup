@@ -108,25 +108,19 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-    
-    
-    //map Latitude de Av. Paulista é -23,5575. Longitude de Av. Paulista é -46,6602
-    var radius = 10, tips = {};
-    var po = org.polymaps;
 
-    var map = po.map()
-        .container(document.getElementById("map").appendChild(po.svg("svg")))
-        .center({lat: -23.557, lon: -46.660})
-        .zoom(15)
-        .add(po.interact());
-
-    map.add(po.image()
-        .url(po.url("http://{S}tile.cloudmade.com"
-        + "/1a1b06b230af4efdbb989ea99e9841af" // http://cloudmade.com/register
-        + "/999/256/{Z}/{X}/{Y}.png")
-        .hosts(["a.", "b.", "c.", ""])));
+    var width = $(window).width();
     
-    map.add(po.compass()
-        .pan("none"));
-
+    $("#map")
+        .find('iframe')
+        .attr('width', width);
+    $(window).resize(function(){
+        var newWidth = $(window).width();
+        var $iframe = $("#map")
+                        .find("iframe");
+        var oldWidth = $($iframe).attr('width');
+        if(oldWidth == undefined || newWidth != oldWidth) {
+            $($iframe).attr('width', newWidth);
+        }
+    });
 })(jQuery); // End of use strict
