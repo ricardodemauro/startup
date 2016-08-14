@@ -163,7 +163,7 @@ footer a:hover, footer a:focus {
 	color: #FFFFFF;
 }
 footer h4 {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.08);
 	padding-bottom: 1.2rem;
 	margin-bottom: 1.2rem;
 	color: #FFFFFF;
@@ -268,6 +268,13 @@ footer ul li {
 	.footer-main .footer-info {
 		text-align: center;
 	}
+  footer h4 {
+    border-bottom: 0px;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: #FFFFFF;
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width:600px) {
 	.footer-main .row {
@@ -470,7 +477,7 @@ header .header-content .header-content-inner p {
     font-size: 22px;
   }
 }
-#processo {
+#como-funciona {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
